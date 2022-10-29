@@ -78,3 +78,56 @@ console.log(total);//prints the sum of all the integers in the array
 
 //7.	Write a function that takes two parameters, word and n, as arguments and returns the word concatenated to itself n number of times.
 // (i.e. if I pass in ‘Hello’ and 3, I would expect the function to return ‘HelloHelloHello’).
+function wordMultiplier(word, multiplier) {
+    console.log (word^multiplier);
+}
+wordMultiplier("Hello", 3);//tried to wriet a function that would return a value of a word repeated n times, but can't get it to work
+
+
+//8.	Write a function that takes two parameters, firstName and lastName, and returns a full name.
+//The full name should be the first and the last name separated by a space
+function fullName(firstName, lastName) {
+    console.log (firstName + " " + lastName);
+}
+fullName("Marin", "Brouillard");
+
+//9.	Write a function that takes an array of numbers and returns true if the sum of all the numbers in the array is greater than 100.
+
+let array2 = [2, 8, 22, 44, 61];
+function add(accumulator, a) {
+    return accumulator + a;
+    if (sum > 100);
+}
+console.log(sum);
+
+//10.	Write a function that takes an array of numbers and returns the average of all the elements in the array.
+const values = [2, 6, 9, 10, 33, 90]; //declares a variable called values, assigns array of numbers
+values.forEach(function(num) {sum +=num});//created a function that loops through numbers in array adding each to the sum
+average = sum/values.length;//divided sum of numbers in array by the number of elements in the array to get the average
+console.log(average);//printed the average value of the array values
+
+//11.	Write a function that takes two arrays of numbers and returns true if the average of the elements in the first array is greater than the average of the elements in the second array.
+const arrayA = [30, 22, 71, 100];//declares a variable, assigns array of numbers
+const arrayB = [1, 2, 3, 4, 5];//declares a variable, assigns array of numbers
+arrayA.forEach(function(num) {sum +=num});//created a function that loops through numbers in array adding each to the sum
+average1 = sum/arrayA.length;//divided sum of numbers in array by the number of elements in the array to get the average
+arrayB.forEach(function(num) {sum +=num});//created a function that loops through numbers in array adding each to the sum
+average2 = sum/arrayB.length;//divided sum of numbers in array by the number of elements in the array to get the average
+console.log((average1) >(average2));//prints boolean value
+
+//12.   Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
+
+function willBuyDrink(isHotOutside, moneyInPocket) {
+    if ((isHotOutside == true) && (moneyInPocket > 10.5));
+   return true;
+}
+willBuyDrink(true, 9);// I'm not sure if I'm using return and console.log correctly. I feel like I'm mixing something up. 
+//created function that returns true if it is hot outside and we have more than 10.50 in our pocket
+
+//13.   Create a function of your own that solves a problem. 
+    //In comments, write what the function does and why you created it.
+function shouldIGiveCatTreat(hasEatenFood, vomitted, behavedLastNight) {
+    if ((hasEatenFood == true) && (vomitted == false) && (behavedLastNight = true));
+    console.log("Pix deserves a tasty treat!")
+     }
+shouldIGiveCatTreat(true, true, true);
