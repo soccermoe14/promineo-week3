@@ -118,16 +118,22 @@ console.log((average1) >(average2));//prints boolean value
 //12.   Write a function called willBuyDrink that takes a boolean isHotOutside, and a number moneyInPocket, and returns true if it is hot outside and if moneyInPocket is greater than 10.50.
 
 function willBuyDrink(isHotOutside, moneyInPocket) {
-    if ((isHotOutside == true) && (moneyInPocket > 10.5));
-   return true;
-}
-willBuyDrink(true, 9);// I'm not sure if I'm using return and console.log correctly. I feel like I'm mixing something up. 
+    console.log(isHotOutside && moneyInPocket > 10.5);
+ }
+willBuyDrink(true, 11);// I'm not sure if I'm using return and console.log correctly. I feel like I'm mixing something up. 
 //created function that returns true if it is hot outside and we have more than 10.50 in our pocket
 
 //13.   Create a function of your own that solves a problem. 
     //In comments, write what the function does and why you created it.
-function shouldIGiveCatTreat(hasEatenFood, vomitted, behavedLastNight) {
-    if ((hasEatenFood == true) && (vomitted == false) && (behavedLastNight = true));
-    console.log("Pix deserves a tasty treat!")
-     }
-shouldIGiveCatTreat(true, true, true);
+function giveCatATreat(hasEaten, goodBehavior) {
+    if (hasEaten == true && goodBehavior == true) {
+        console.log("Good kitty! You deserve a tasty treat!");
+    } else {
+        console.log("Sorry turd muffin! No treats for you.");
+    }
+    }
+giveCatATreat(true, true);
+   //this is a function I created for to determine whether or not my cat deserves a treat.
+   //created a function with 2 parameters that results in different responses
+   //depending on the boolean value of the arguments passed in 
+    
